@@ -26,7 +26,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("#send_form_status").html("").hide();
     var data = $("#contact_form").serialize();
-    $.post("send_form.php", data, function (res) {
+    $.post("/send_form.php", data, function (res) {
       $("#send_form_status").html(res.msg).show();
       if (res.status == 1) {
         $("#contact_form")[0].reset();
