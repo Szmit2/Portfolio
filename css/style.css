@@ -506,6 +506,9 @@ div.project:nth-child(3) {
 div.project:nth-child(4) {
   animation: zoomIn 1.2s 5.4s both;
 }
+div.project:nth-child(5) {
+  animation: zoomIn 1.2s 5.8s both;
+}
 div.project img {
   border-radius: 20px;
 }
