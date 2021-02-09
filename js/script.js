@@ -1,9 +1,15 @@
 // Burger
 const burger = document.querySelector("div.burger");
 const navMobile = document.querySelector("nav.mobile");
+const main1 = document.querySelector(".start");
+const main2 = document.querySelector(".projects");
+const footer = document.querySelector(".footer");
 showNavMobile = () => {
   burger.classList.toggle("on");
   navMobile.classList.toggle("on");
+  main1.classList.toggle("on");
+  main2.classList.toggle("on");
+  footer.classList.toggle("on");
 };
 burger.addEventListener("click", showNavMobile);
 
