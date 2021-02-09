@@ -24,6 +24,9 @@ $(".link1 , .link2 , .link").on("click", function () {
   );
   burger.classList.remove("on");
   navMobile.classList.remove("on");
+  main1.classList.remove("on");
+  main2.classList.remove("on");
+  footer.classList.remove("on");
 });
 
 // FORM
