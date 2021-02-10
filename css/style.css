@@ -294,6 +294,19 @@ nav.desktop {
   nav.desktop ul li:nth-child(4) {
     animation: liSlide 1s 0.8s both;
   }
+  p.desktopPhone {
+    transform: skew(-14deg);
+    font-family: "Yusei Magic", sans-serif;
+    margin: 15px 20px;
+  }
+  p.desktopPhone a {
+    color: rgb(168, 168, 168);
+    margin-left: 5px;
+    transition: 0.2s;
+  }
+  p.desktopPhone:hover a {
+    color: #fff;
+  }
 }
 @media (min-width: 1300px) {
   nav.desktop ul li {
