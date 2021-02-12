@@ -295,9 +295,10 @@ nav.desktop {
     animation: liSlide 1s 0.8s both;
   }
   p.desktopPhone {
-    transform: skew(-14deg);
     font-family: "Yusei Magic", sans-serif;
     margin: 15px 20px;
+    animation: bounceInRight2 1s both;
+    transform: skew(-14deg);
   }
   p.desktopPhone a {
     color: rgb(168, 168, 168);
@@ -1010,7 +1011,38 @@ form input[type="text"] {
     transform: translateZ(0);
   }
 }
-
+@keyframes bounceInRight2 {
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3) skew(-14deg);
+    transform: translate3d(3000px, 0, 0) scaleX(3 skew(-14deg));
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1) skew(-14deg);
+    transform: translate3d(-25px, 0, 0) scaleX(1) skew(-14deg);
+  }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98) skew(-14deg);
+    transform: translate3d(10px, 0, 0) scaleX(0.98) skew(-14deg);
+  }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995) skew(-14deg);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995) skew(-14deg);
+  }
+  to {
+    -webkit-transform: translateZ(0) skew(-14deg);
+    transform: translateZ(0) skew(-14deg);
+  }
+}
 .footer.on,
 main.start.on,
 main.projects.on {
