@@ -509,9 +509,9 @@ div.project {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  animation: zoomIn 1.2s 4.4s both;
+  /* animation: zoomIn 1.2s 4.4s both; */
 }
-div.project:nth-child(2) {
+/* div.project:nth-child(2) {
   animation: zoomIn 1.2s 4.8s both;
 }
 div.project:nth-child(3) {
@@ -523,6 +523,9 @@ div.project:nth-child(4) {
 div.project:nth-child(5) {
   animation: zoomIn 1.2s 5.8s both;
 }
+div.project:nth-child(6) {
+  animation: zoomIn 1.2s 6.2s both;
+} */
 div.project img {
   border-radius: 20px;
 }

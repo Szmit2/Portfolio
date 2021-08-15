@@ -73,3 +73,5 @@ arrow.addEventListener("click", function () {
   arrow.classList.toggle("active");
   infoTab.classList.toggle("active");
 });
+
+AOS.init();
